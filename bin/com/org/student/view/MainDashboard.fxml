@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="555.0" prefWidth="851.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.org.student.view.MainDashBoard">
+   <children>
+      <VBox layoutX="350.0" layoutY="139.0" prefHeight="600.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <StackPane prefHeight="91.0" prefWidth="900.0" style="-fx-background-color: #0081d7;">
+               <children>
+                  <Label text="SCORE MANAGEMENT SYSTEM" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="38.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <GridPane alignment="CENTER" prefHeight="173.0" prefWidth="787.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="121.0" minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fitHeight="131.0" fitWidth="200.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../other/img/SchoolInfo.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="45.0" top="27.0" />
+                     </GridPane.margin>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="131.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../other/img/StudentMgmt.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="45.0" top="27.0" />
+                     </GridPane.margin>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+                  <ImageView fitHeight="131.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                     <image>
+                        <Image url="@../other/img/StaffMgmt.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="45.0" top="27.0" />
+                     </GridPane.margin>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+                  <ImageView fitHeight="129.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+                     <image>
+                        <Image url="@../other/img/ExamMgmt.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="45.0" top="27.0" />
+                     </GridPane.margin>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+                  <Button contentDisplay="CENTER" mnemonicParsing="false" prefHeight="36.0" prefWidth="162.0" styleClass="jfx-button" stylesheets="@style.css" text="School Information" textFill="WHITE" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="27.0" top="27.0" />
+                     </GridPane.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="30.0" layoutY="140.0" mnemonicParsing="false" onAction="#fnStudent" prefHeight="35.0" prefWidth="162.0" styleClass="jfx-button" stylesheets="@style.css" text="Student Management" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="27.0" top="27.0" />
+                     </GridPane.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="185.0" layoutY="130.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="162.0" styleClass="jfx-button" stylesheets="@style.css" text="Teacher Management" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="27.0" top="27.0" />
+                     </GridPane.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="360.0" layoutY="130.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="159.0" styleClass="jfx-button" stylesheets="@style.css" text="Exam Management" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="27.0" top="27.0" />
+                     </GridPane.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="40.0" right="40.0" top="25.0" />
+               </VBox.margin>
+            </GridPane>
+            <GridPane alignment="CENTER" layoutX="50.0" layoutY="126.0" prefHeight="173.0" prefWidth="787.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="121.0" minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <ImageView fitHeight="131.0" fitWidth="200.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../other/img/LibraryMgmt.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="45.0" top="27.0" />
+                     </GridPane.margin>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="131.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../other/img/EventMgmt.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="45.0" top="27.0" />
+                     </GridPane.margin>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+                  <ImageView fitHeight="131.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                     <image>
+                        <Image url="@../other/img/InventoryMgmt.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="45.0" top="27.0" />
+                     </GridPane.margin>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+                  <ImageView fitHeight="129.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+                     <image>
+                        <Image url="@../other/img/NoticeMgmt.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="45.0" top="27.0" />
+                     </GridPane.margin>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+                  <Button contentDisplay="CENTER" mnemonicParsing="false" prefHeight="36.0" prefWidth="162.0" styleClass="jfx-button" stylesheets="@style.css" text="Lribrary Information" textFill="WHITE" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="27.0" top="27.0" />
+                     </GridPane.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="30.0" layoutY="140.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="162.0" styleClass="jfx-button" stylesheets="@style.css" text="Event Management" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="27.0" top="27.0" />
+                     </GridPane.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="185.0" layoutY="130.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="162.0" styleClass="jfx-button" stylesheets="@style.css" text="Inventory Management" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="27.0" top="27.0" />
+                     </GridPane.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="360.0" layoutY="130.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="159.0" styleClass="jfx-button" stylesheets="@style.css" text="Notice Management" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="27.0" top="27.0" />
+                     </GridPane.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="45.0" right="45.0" top="25.0" />
+               </VBox.margin>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
