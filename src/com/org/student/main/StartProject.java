@@ -12,7 +12,7 @@ public class StartProject extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			Parent root = FXMLLoader.load(getClass().getResource("../view/Login.fxml"));
-			primaryStage.setTitle("Student Management System");
+			primaryStage.setTitle("Student System");
 			primaryStage.setScene(new Scene(root));
 			primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("../other/img/login.png")));
 			primaryStage.show();
