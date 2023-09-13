@@ -11,7 +11,8 @@ public class StartProject extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			Parent root = FXMLLoader.load(getClass().getResource("../view/Login.fxml"));
+//			Parent root = FXMLLoader.load(getClass().getResource("../view/Login.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("../view/MainDashboard.fxml"));
 			primaryStage.setTitle("Student System");
 			primaryStage.setScene(new Scene(root));
 			primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("../other/img/login.png")));

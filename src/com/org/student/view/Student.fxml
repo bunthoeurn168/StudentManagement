@@ -25,6 +25,11 @@
                         <Font name="System Bold" size="38.0" />
                      </font>
                   </Label>
+                  <ImageView fitHeight="55.0" fitWidth="74.0" onMouseClicked="#Back" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER_LEFT">
+                     <image>
+                        <Image url="@../other/img/Back.png" />
+                     </image>
+                  </ImageView>
                </children>
             </StackPane>
             <GridPane prefHeight="236.0" prefWidth="851.0">

@@ -27,4 +27,10 @@ public class MainDashBoard {
 		((Node)event.getSource()).getScene().getWindow().hide();
 		StudentView.studentInfo();
 	}
+	@FXML
+	private void fnTeacher(ActionEvent event){
+		((Node)event.getSource()).getScene().getWindow().hide();
+		TeacherView.teacherInfo();
+	}
+
 }

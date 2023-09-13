@@ -109,7 +109,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button layoutX="185.0" layoutY="130.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="162.0" styleClass="jfx-button" stylesheets="@style.css" text="Teacher Management" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                  <Button layoutX="185.0" layoutY="130.0" mnemonicParsing="false" onAction="#fnTeacher" prefHeight="36.0" prefWidth="162.0" styleClass="jfx-button" stylesheets="@style.css" text="Teacher Management" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
