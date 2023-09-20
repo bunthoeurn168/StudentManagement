@@ -9,7 +9,7 @@ public class DBConnection {
 	private static DBConnection dbConnection;
 	
 	private DBConnection() throws SQLException{
-		conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/score", "postgres", "123");
+		conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/scoremanagement", "postgres", "123");
 	}
 	
 	public Connection getConnection(){
