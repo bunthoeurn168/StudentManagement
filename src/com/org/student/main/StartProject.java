@@ -12,10 +12,11 @@ public class StartProject extends Application {
 	public void start(Stage primaryStage) {
 		try {
 //			Parent root = FXMLLoader.load(getClass().getResource("../view/Login.fxml"));
-			Parent root = FXMLLoader.load(getClass().getResource("../view/MainDashboard.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("../view/TeacherRegister.fxml"));
+//			Parent root = FXMLLoader.load(getClass().getResource("../view/MainDashboard.fxml"));
 			primaryStage.setTitle("Student System");
 			primaryStage.setScene(new Scene(root));
-			primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("../other/img/login.png")));
+	primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("../other/img/login.png")));
 			primaryStage.show();
 		} catch(Exception e) {
 			e.printStackTrace();

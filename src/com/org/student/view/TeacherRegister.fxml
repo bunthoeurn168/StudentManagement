@@ -111,7 +111,7 @@
                         <Font size="14.0" />
                      </font>
                   </TextField>
-                  <PasswordField fx:id="passwordField" layoutX="196.0" layoutY="70.0" />
+                  <PasswordField fx:id="passwordField" layoutX="196.0" layoutY="70.0" prefHeight="33.0" prefWidth="595.0" promptText="Enter Password" />
                </children>
             </AnchorPane>
             <HBox alignment="CENTER" prefHeight="59.0" prefWidth="851.0" spacing="40.0">

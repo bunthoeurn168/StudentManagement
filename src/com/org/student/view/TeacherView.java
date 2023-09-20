@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
@@ -33,5 +34,9 @@ public class TeacherView {
 		
 	}
 	
-	
+    @FXML
+    void Back(MouseEvent event) {
+    	((Node)event.getSource()).getScene().getWindow().hide();
+    	MainDashBoard.frmLayout();
+    }
 }
